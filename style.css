@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+
+
+html{
+    
+        background-image: url('stockimg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: fit-content;
+        width: fit-content;
+}
+
+.navbar{
+    width:85%;
+    margin: auto;
+    padding: 35px 0;
+    
+    align-items:center;
+    
+   
+    display: inline-block;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: linear-gradient(-45deg, #ff00ef, #397dda);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+    
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+    
+}
+.content h2{
+    color:white;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    transform: translateY(50%);
+    text-align: center;
+    font-size: 50px;
+}
+
+.navbarlogo{
+    width:80%;
+    display: flex;
+    align-items:center;
+    position: absolute;
+    top: 3%;
+    transform: translate(101%); 
+    
+}
+
+
+
+.navbarlogo a{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    
+    
+    
+}
+ img{
+     padding: 5px;
+     
+     
+
+ }
+
+
+.content h1{
+    position: relative;
+    font-size: 25px;;
+    color:white;
+    width: 100%;
+    top: 9%;
+    text-align: left;
+    left: 88px;
+}
+
+.content p{
+    text-align: left;
+    transform: translateY(10%);
+    left: 20%;
+}
+.navbarlogo a .fab{
+    font-size: 30px;
+    line-height: 60px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+
+}
+.navbarlogo a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(-45deg, #ff00ef, #397dda);
+    transition: 0.5s;
+}
+.navbarlogo a:hover::after{
+top:0;
+}
+.navbarlogo a:hover .fab{
+    color: black;
+}
+
+.navbarlogo a .far{
+    font-size: 30px;
+    line-height: 60px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+.navbarlogo a:hover .far{
+    color: black;
+
+}
+.responsive{
+    width: 50%;
+    height: 33%;
+
+}
+
+.responsive2{
+    width: 100%;
+    height: 60%;
+
+}
+
+
